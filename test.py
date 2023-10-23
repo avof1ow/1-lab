@@ -56,4 +56,6 @@ for _ in range(int(input("На сколько дней\n>>>"))):
                 current_date["day"] = 31
     else:
         current_date["day"] -= 1
+        df = pd.DataFrame(data)
+        df. to_csv("dollar_course.csv", sep=",", encoding="utf-8") 
   
